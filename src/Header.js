@@ -1,3 +1,4 @@
+
 import React from 'react';
 import './Header.css';
 import SearchIcon from '@mui/icons-material/Search';
@@ -7,6 +8,7 @@ import { useStateValue } from './StateProvider';
 
 function Header() {
     const [{cart},dispatch] = useStateValue();
+
     return (
         <div className='header'>
             <Link to="/">
@@ -43,6 +45,7 @@ function Header() {
             <span className="header--optionLineTwo header--basketCount">{cart?.length}</span>
             </div>
             </Link>
+          
             
         </div>
     )

@@ -1,6 +1,12 @@
+
 export const initialState = {
     cart: [],
 };
+
+// Selector
+export const getCardTotal=(cart) =>
+        cart?.reduce((amount,item) =>amount + item.price,0);
+      
 
 const reducer = (state, action) =>{
     console.log(action);
