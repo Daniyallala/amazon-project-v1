@@ -18,15 +18,16 @@ function Header() {
 
             <div className="header--search">
               <input className="header--searchInput" type="text" />
-              {/* Material UI */}
              <SearchIcon className="header--searchIcon"/>
             </div>
 
             <div className="header--nav">
+                <Link to ='/login'>
                 <div className='header--option'>
                     <span className='header--optionLineOne'>Hello Guest</span>
                     <span className='header--optionLineTwo'>Sign In</span>
                 </div>
+                </Link>
 
                 <div className='header--option'>
                     <span className='header--optionLineOne'>Return</span>

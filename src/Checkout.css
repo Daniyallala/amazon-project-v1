@@ -1,6 +1,6 @@
 .checkout{
     display:flex;
-    background-color: bisque;
+    background-color: #EAEDED;
     height: max-content;
     padding: 20px;
 }
@@ -20,5 +20,5 @@
 }
 
 .checkout--right{
-    background-color: aqua;
+    background-color: #EAEDED;
 }
