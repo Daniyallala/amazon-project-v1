@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Login from './Login';
 import { useEffect } from 'react';
 import { useStateValue } from './StateProvider';
+import { auth } from './firebase';
 
 function App() {
   const [{},dispatch] = useStateValue();
