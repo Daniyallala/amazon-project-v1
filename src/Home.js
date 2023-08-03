@@ -6,7 +6,7 @@ function Home() {
     return (
         <div className="home">
             <div className="home--container">
-                <img className="home--image" src="https://images-eu.ssl-images-amazon.com/images/G/31/prime/PD23/ACQ/hero/v2/PC_Hero_3000x1200_2X_EN._CB600991698_.jpg" alt='' />
+                <img className="home--image" src="https://images-eu.ssl-images-amazon.com/images/G/31/prime/AugART/Acq/gwhero/PC_Hero_3000x1200_live-now_ft._CB599265579_.jpg" alt='' />
 
                 <div className="home--row">
                     <Product
@@ -45,9 +45,9 @@ function Home() {
                 <div className="home--row">
                 <Product
                         id="06"
-                        title="DecorNation Julius Upholstered Platform Bed for Bedroom, Home Furniture (Grey, Size: Queen, Fitting Mattress, 60 x 78 x 6 Inches)"
+                        title="Redmi 80 cm (32 inches) HD Ready Smart LED Fire TV L32R8-FVIN (Black)"
                         price={14500}
-                        image="https://m.media-amazon.com/images/I/61GnO+UavZL._SL1400_.jpg"
+                        image="https://m.media-amazon.com/images/I/81EyqJpLLSL._SX679_.jpg"
                     />
                 </div>
             </div>
