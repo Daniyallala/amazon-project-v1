@@ -17,6 +17,13 @@
     margin-left: 5px;
     margin-right: 5px;
 }
+.product:hover{
+    transform: scale(1.1);
+    background:#E3E6E6;
+    z-index: 2;
+    box-shadow: 2px 2px 2px #000;
+
+}
 .home--image{
     width: 100%;
     object-fit: contain;
