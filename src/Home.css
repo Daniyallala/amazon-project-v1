@@ -16,14 +16,14 @@
     z-index: 1;
     margin-left: 5px;
     margin-right: 5px;
+    transition: 1s ease;
 }
 .product:hover{
-    transition: scale(1.1);
-    background:#E3E6E6;
-    z-index: 2;
-    box-shadow: 1px 1px 1px #000;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 1s ease;
     border-radius: 8px;
-
 }
 .home--image{
     width: 100%;
