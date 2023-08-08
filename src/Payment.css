@@ -2,13 +2,13 @@
     background-color: white;
 }
 
-.payment--container{
+/* .payment--container{
     text-align: center;
     padding: 10px;
     font-weight: 400;
     background-color: aliceblue;
     border-bottom: 1px solid lightgrey;
-}
+} */
 
 .payment--section{
     display: flex;
@@ -21,6 +21,6 @@
     flex:0.2;
 }
 
-.payment--address, .payment--items,.payment--details{
+.payment--address, .payment--items, .payment--details{
     flex: 0.8;
 }
