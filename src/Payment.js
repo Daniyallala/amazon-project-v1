@@ -8,8 +8,12 @@ import { getCardTotal } from './reducer';
 import CurrencyFormat from 'react-currency-format';
 import { useEffect } from 'react';
 import axios from 'axios';
+import { useHistory } from 'react-router';
+
+
 function Payment() {
     const [{ cart, user }, dispatch] = useStateValue();
+    const history=useHistory();
     const stripe = useStripe();
     const elements = useElements();
     const [error, setError] = useState(null);
@@ -36,11 +40,17 @@ function Payment() {
         event.preventDefault();
         setProcessing(true);
 
-        const payload = await stripe.confirmCardPayment(clientSecret,{
-            payment_method:{
+        const payload = await stripe.confirmCardPayment(clientSecret, {
+            payment_method: {
                 card: elements.getElement(CardElement)
             }
-        });
+        }).then(({ paymentIntent }) => {
+            setSucceeded(true);
+            setError(null);
+            setProcessing(false);
+
+            history.replace('/orders')
+        })
     };
     const handleChange = event => {
         setDisabled(event.empty);

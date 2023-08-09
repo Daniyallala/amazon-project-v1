@@ -271,13 +271,13 @@ function Home() {
                 <div className="home--row">
                 <Product
                         id="41"
-                        title="NDO ERA Women's Cotton Blend Solid Straight Kurta Trouser with Dupatta Set"
+                        title="NDO ERA Women's Cotton B Kurta Trouser with Dupatta Set"
                         price={750}
                         image="https://m.media-amazon.com/images/I/71rgWbkZD6S._UY879_.jpg"
                     />
                 <Product
                         id="42"
-                        title="INDO ERA Women's Cotton Blend Yoke Design Straight Kurta Palazzos With Dupatta Set "
+                        title="INDO ERA Women's Cotton  Kurta Palazzos With Dupatta Set "
                         price={650}
                         image="https://m.media-amazon.com/images/I/71UGY7UiVZL._UY879_.jpg"
                 />
@@ -309,7 +309,7 @@ function Home() {
                 />
                  <Product
                         id="47"
-                        title="Just Herbs Makeup Kit for Women with Kohl Kajal, 3 in 1 Primer, Liquid Lipstick, Serum Foundation and Lip & Cheeck Tint"
+                        title="Just Herbs Makeup Kit for Women"
                         price={1940}
                         image="https://m.media-amazon.com/images/I/418R0n+ZTsL._SX342_SY445_.jpg"
                     />
