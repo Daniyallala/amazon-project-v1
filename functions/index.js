@@ -1,11 +1,9 @@
 // const {onRequest} = require("firebase-functions/v2/https");
 // const logger = require("firebase-functions/logger");
-const functions=require("firebase-function");
 
-// const function=requires("firebase-functions");
-const express= require("express");
+import express from "express";
 
-const cors =require("cors");
+import cors from "cors";
 const stripe =require ("stripe")("sk_test_51Nc6GUSF7D7Kh7sQq2BzDisXcpE8HZvXuPHOLBWrjchblhXTtj6vdzMmGgHDl5YZcqqNuRZfcae4654aRYqfjkCY00rzU5sjrj");
 
 //  API
@@ -20,7 +18,13 @@ app.use(express.json());
 // API Routes
 app.get('/',(request, response)=>response.status(200).send('hello world'));
 
-// -listen Command
-exports.api =functions.https.onRequest(app);
 
-// In Terminal under function -> firebase emulators:start
+app.post('/payment/create,async',async (request, response)=>{
+    const total= request.querry.total;
+    console.log("Total Payment Recieved>>",total);
+
+    const paymentIntent= awaitstripe.paymentIntent.create({
+        amount:total,
+        currency:"inr",
+    });
+})
